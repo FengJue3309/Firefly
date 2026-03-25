@@ -1,1 +1,136 @@
-这里是HTML注入示例，你可以在这个文件中添加自定义的HTML内容
+﻿<!-- 网站底部徽章栏 -->
+<div class="footer-badges-container">
+  <div class="badges-wrapper">
+    <!-- IPv6 支持 -->
+    <a href="https://ipw.cn/ipv6webcheck/?site=v7w.cn" 
+       title="本站支持IPv6访问" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="badge-item">
+      <img src="https://static.ipw.cn/icon/ipv6-s1.svg" alt="IPv6 Supported" loading="lazy" />
+    </a>
+
+    <!-- SSL 安全 -->
+    <a href="https://ipw.cn/ssl/?site=v7w.cn" 
+       title="本站支持SSL安全访问" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="badge-item">
+      <img src="https://static.ipw.cn/icon/ssl-s1.svg" alt="SSL Secure" loading="lazy" />
+    </a>
+
+    <!-- HTTP/3 支持 -->
+    <a href="https://http3.wcode.net/?q=v7w.cn" 
+       title="检查 HTTP/3 支持" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="badge-item">
+      <img src="https://http3.wcode.net/badges/http3.svg?host=v7w.cn" alt="HTTP/3 Supported" loading="lazy" style="height: 24px;" />
+    </a>
+
+    <!-- 域名年龄 -->
+    <a href="https://14.cx/" 
+       title="域名年龄查询" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="badge-item">
+      <img src="https://14.cx/api/badge/domain-age/v7w.cn?theme=green&lang=zh&size=small&mode=light" alt="Domain Age" loading="lazy" style="height: 24px;" />
+    </a>
+    
+    <!-- ICP 备案 (带图标) -->
+    <a href="https://beian.miit.gov.cn/" 
+       target="_blank" 
+       rel="nofollow noopener" 
+       class="badge-item icp-badge"
+       title="ICP 备案查询">
+      <img src="/favicon/icp.svg" alt="ICP Icon" class="icp-icon" loading="lazy" />
+      <span class="icp-text">陕ICP备2023002152号</span>
+    </a>
+
+    <!-- 服务器图标 (ESA) -->
+    <div class="badge-item server-badge" title="Server Infrastructure">
+      <img src="/favicon/esa.svg" alt="Server Icon" class="server-icon" loading="lazy" />
+    </div>
+  </div>
+</div>
+
+<!-- 样式定义 (如果您使用的是 Tailwind CSS，这部分可以省略，直接使用上面的 class；如果是普通 CSS，请保留) -->
+<style>
+  .footer-badges-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
+  .badges-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* 图标之间的间距 */
+    max-width: 100%;
+  }
+
+  .badge-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .badge-item:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+  }
+
+  .badge-item img {
+    display: block;
+    height: 24px; /* 统一图标高度 */
+    width: auto;
+    vertical-align: middle;
+  }
+
+  /* ICP 特殊样式 */
+  .icp-badge {
+    gap: 6px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .icp-badge:hover .icp-text {
+    text-decoration: underline;
+  }
+
+  .icp-icon {
+    height: 18px !important; /* ICP 图标稍微小一点以匹配文字 */
+    width: auto;
+  }
+
+  .icp-text {
+    white-space: nowrap;
+  }
+
+  /* 服务器图标特殊样式 */
+  .server-badge img {
+    height: 16px !important; /* 服务器图标通常较小，这里设为 16px */
+    width: auto;
+    opacity: 0.9;
+  }
+
+  /* 移动端适配：屏幕小于 640px 时，增加上下间距，防止太挤 */
+  @media (max-width: 640px) {
+    .badges-wrapper {
+      gap: 10px 15px; /* 行间距 10px，列间距 15px */
+    }
+    .badge-item img {
+      height: 22px; /* 手机上稍微缩小一点 */
+    }
+    .server-badge img {
+      height: 14px !important;
+    }
+  }
+</style>
