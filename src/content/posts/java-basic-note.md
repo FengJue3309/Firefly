@@ -1,4 +1,4 @@
----
+﻿---
 title: Java基础笔记
 published: 2026-03-26
 description: Java初学者学习笔记，详细讲解Java基础语法、数据类型、变量类型、修饰符、运算符、循环结构、条件语句、switch case语句、Number和Math类、Character类等核心概念。
@@ -9,10 +9,11 @@ lang: zh-CN
 image: /images/java-basic/image-20240228195010033.png
 ---
 
-> Java初学者学习笔记，详细讲解Java基础语法、数据类型、变量类型、修饰符、运算符、循环结构、条件语句、switch case语句、Number和Math类、Character类等核心概念。
-
 # Java基础笔记
 
+> Java初学者学习笔记，详细讲解Java基础语法、数据类型、变量类型、修饰符、运算符、循环结构、条件语句、switch case语句、Number和Math类、Character类等核心概念。
+
+![封面](/images/java-basic/image-20240228195010033.png)
 ---
 
 ## 一、Java基础语法
