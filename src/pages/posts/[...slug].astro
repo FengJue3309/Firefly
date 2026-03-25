@@ -240,7 +240,8 @@ const relatedPosts = await getRelatedPosts(entry, 5);
         }
       </div>
 
-      <!-- 文章顶部头图 -->
+      <!-- 禁用文章顶部头图 -->
+      {/*
       {
         processedImage && coverImageConfig.enableInPost && (
           <div style="margin-top:1rem;">
@@ -255,6 +256,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
           </div>
         )
       }
+      */}
 
       {entry.data.password ? (
         <EncryptedPost password={entry.data.password} slug={entry.id} hint={entry.data.passwordHint}>
