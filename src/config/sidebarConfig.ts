@@ -60,7 +60,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 是否启用该组件
 			enable: true,
 			// 组件位置
-			position: "sticky",
+			//position: "sticky",
+			position: "top",
 			// 是否在文章详情页显示
 			showOnPostPage: true,
 			// 是否在非文章详情页显示
@@ -130,31 +131,6 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		},
 	],
 
-	// 右侧边栏组件配置列表
-	rightComponents: [
-		{
-			// 组件类型：日历组件
-			type: "calendar",
-			// 是否启用该组件
-			enable: false,
-			// 组件位置
-			position: "sticky",
-			// 是否在文章详情页显示
-			showOnPostPage: false,
-		},
-		{
-			// 组件类型：广告栏组件 2
-			type: "advertisement",
-			// 是否启用该组件
-			enable: false,
-			// 组件位置
-			position: "sticky",
-			// 是否在文章详情页显示
-			showOnPostPage: true,
-			// 配置ID：使用第二个广告配置
-			configId: "ad2",
-		},
-	],
 
 	// 移动端底部组件配置列表
 	// 这些组件只在移动端(<768px)显示在页面底部，独立于左右侧边栏配置
