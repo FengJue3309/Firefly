@@ -76,11 +76,12 @@ export const siteConfig: SiteConfig = {
 		// 2. 本地图片（public目录，不优化）: { type: "image", value: "/assets/images/logo.webp", alt: "Logo" }
 		// 3. 本地图片（src目录，自动优化但会增加构建时间，推荐）: { type: "image", value: "assets/images/logo.webp", alt: "Logo" }
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
-		logo: {
-			type: "image",
-			value: "assets/images/firefly.png",
-			alt: "🍀",
-		},
+		// 5. 禁用Logo: 注释掉或删除整个 logo 配置
+		// logo: {
+		// 	type: "image",
+		// 	value: "assets/images/firefly.png",
+		// 	alt: "🍀",
+		// },
 		// 导航栏标题
 		title: "枫诀网络科技工作室",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
