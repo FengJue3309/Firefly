@@ -11,7 +11,7 @@ export const profileConfig: ProfileConfig = {
 	// 名字
 	name: "枫诀宝贝",
 
-	v7// 个人签名
+	// 个人签名
 	bio: "以代码为任，解剖数字混沌。",
 
 	// 链接配置
