@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "枫诀网络科技工作室 ｜ 一个关于创造与分享的空间",
 
 	// 站点 URL
-	site_url: "",
+	site_url: "https://v7w.cn",
 
 	// 站点描述
 	description:
