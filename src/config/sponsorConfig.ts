@@ -1,4 +1,4 @@
-import type { SponsorConfig } from "../types/config";
+﻿import type { SponsorConfig } from "../types/config";
 
 export const sponsorConfig: SponsorConfig = {
 	// 页面标题，如果留空则使用 i18n 中的翻译
@@ -12,10 +12,10 @@ export const sponsorConfig: SponsorConfig = {
 		"您的赞助将用于服务器维护、内容创作和功能开发，帮助我持续提供优质内容。",
 
 	// 是否显示赞助者列表
-	showSponsorsList: true,
+	showSponsorsList: false,
 
 	// 是否显示评论区，需要先在commentConfig.ts启用评论系统
-	showComment: true,
+	showComment: false,
 
 	// 是否在文章详情页底部显示赞助按钮
 	showButtonInPost: true,
