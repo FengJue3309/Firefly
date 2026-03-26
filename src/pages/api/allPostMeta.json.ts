@@ -1,5 +1,7 @@
 import { getSortedPosts } from "@/utils/content-utils";
 
+export const prerender = true;
+
 export async function GET() {
 	const posts = await getSortedPosts();
 
