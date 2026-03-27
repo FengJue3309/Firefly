@@ -1,61 +1,12 @@
 ﻿<!-- 网站底部徽章栏 -->
 <div class="footer-badges-container">
-  <div class="badges-wrapper">
-    <!-- IPv6 支持 -->
-    <a href="https://ipw.cn/ipv6webcheck/?site=v7w.cn" 
-       title="本站支持IPv6访问" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="badge-item">
-      <img src="https://static.ipw.cn/icon/ipv6-s1.svg" alt="IPv6 Supported" loading="lazy" />
-    </a>
-
-    <!-- SSL 安全 -->
-    <a href="https://ipw.cn/ssl/?site=v7w.cn" 
-       title="本站支持SSL安全访问" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="badge-item">
-      <img src="https://static.ipw.cn/icon/ssl-s1.svg" alt="SSL Secure" loading="lazy" />
-    </a>
-
-    <!-- HTTP/3 支持 -->
-    <a href="https://http3.wcode.net/?q=v7w.cn" 
-       title="检查 HTTP/3 支持" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="badge-item">
-      <img src="https://http3.wcode.net/badges/http3.svg?host=v7w.cn" alt="HTTP/3 Supported" loading="lazy" style="height: 24px;" />
-    </a>
-
-    <!-- 域名年龄 -->
-    <a href="https://14.cx/v7w.cn" 
-       title="域名年龄查询" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="badge-item">
-      <img src="https://14.cx/api/badge/domain-age/v7w.cn?theme=green&lang=zh&size=small&mode=light" alt="Domain Age" loading="lazy" style="height: 24px;" />
-    </a>
-    
-    <!-- 服务器图标 (ESA) -->
-    <div class="badge-item server-badge" title="Server Infrastructure">
-      <img src="/favicon/esa.svg" alt="Server Icon" class="server-icon" loading="lazy" />
-    </div>
-
-    <!-- ICP 备案 (带图标) -->
-    <a href="https://beian.miit.gov.cn/" 
-       target="_blank" 
-       rel="nofollow noopener" 
-       class="badge-item icp-badge"
-       title="ICP 备案查询">
-      <img src="/favicon/icp.svg" alt="ICP Icon" class="icp-icon" loading="lazy" />
-      <span class="icp-text">陕ICP备2023002152号</span>
-    </a>
-
+  <div class="badges-wrapper" id="auto-badges-container">
+    <!-- 内容将由 JavaScript 动态填充 -->
   </div>
 </div>
-<!-- 样式定义 (如果您使用的是 Tailwind CSS，这部分可以省略，直接使用上面的 class；如果是普通 CSS，请保留) -->
+
 <style>
+  /* 保留原有样式不变 */
   .footer-badges-container {
     width: 100%;
     display: flex;
@@ -69,7 +20,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 12px; /* 图标之间的间距 */
+    gap: 12px;
     max-width: 100%;
   }
 
@@ -89,7 +40,7 @@
 
   .badge-item img {
     display: block;
-    height: 24px; /* 统一图标高度 */
+    height: 24px;
     width: auto;
     vertical-align: middle;
   }
@@ -106,7 +57,7 @@
   }
 
   .icp-icon {
-    height: 18px !important; /* ICP 图标稍微小一点以匹配文字 */
+    height: 18px !important;
     width: auto;
   }
 
@@ -116,21 +67,92 @@
 
   /* 服务器图标特殊样式 */
   .server-badge img {
-    height: 16px !important; /* 服务器图标通常较小，这里设为 16px */
+    height: 16px !important;
     width: auto;
     opacity: 0.9;
   }
 
-  /* 移动端适配：屏幕小于 640px 时，增加上下间距，防止太挤 */
+  /* 移动端适配 */
   @media (max-width: 640px) {
     .badges-wrapper {
-      gap: 10px 15px; /* 行间距 10px，列间距 15px */
+      gap: 10px 15px;
     }
     .badge-item img {
-      height: 22px; /* 手机上稍微缩小一点 */
+      height: 22px;
     }
     .server-badge img {
       height: 14px !important;
     }
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('auto-badges-container');
+    // 获取当前访问的域名 (例如: v7w.cn)
+    const currentDomain = window.location.hostname;
+
+    // 1. IPv6 徽章
+    const ipv6Link = document.createElement('a');
+    ipv6Link.href = `https://ipw.cn/ipv6webcheck/?site=${currentDomain}`;
+    ipv6Link.title = "本站支持IPv6访问";
+    ipv6Link.target = "_blank";
+    ipv6Link.rel = "noopener noreferrer";
+    ipv6Link.className = "badge-item";
+    ipv6Link.innerHTML = `<img src="https://static.ipw.cn/icon/ipv6-s1.svg" alt="IPv6 Supported" loading="lazy" />`;
+    
+    // 2. SSL 徽章
+    const sslLink = document.createElement('a');
+    sslLink.href = `https://ipw.cn/ssl/?site=${current  Domain}`;
+    sslLink.title = "本站支持SSL安全访问";
+    sslLink.target = "_blank";
+    sslLink.rel = "noopener noreferrer";
+    sslLink.className = "badge-item";
+    sslLink.innerHTML = `<img src="https://static.ipw.cn/icon/ssl-s1.svg" alt="SSL Secure" loading="lazy" />`;
+
+    // 3. HTTP/3 徽章
+    const http3Link = document.createElement('a');
+    http3Link.href = `https://http3.wcode.net/?q=${currentDomain}`;
+    http3Link.title = "检查 HTTP/3 支持";
+    http3Link.target = "_blank";
+    http3Link.rel = "noopener noreferrer";
+    http3Link.className = "badge-item";
+    http3Link.innerHTML = `<img src="https://http3.wcode.net/badges/http3.svg?host=${currentDomain}" alt="HTTP/3 Supported" loading="lazy" style="height: 24px;" />`;
+
+    // 4. 域名年龄徽章
+    const ageLink = document.createElement('a');
+    ageLink.href = `https://14.cx/${currentDomain}`;
+    ageLink.title = "域名年龄查询";
+    ageLink.target = "_blank";
+    ageLink.rel = "noopener noreferrer";
+    ageLink.className = "badge-item";
+    ageLink.innerHTML = `<img src="https://14.cx/api/badge/domain-age/${currentDomain}?theme=green&lang=zh&size=small&mode=light" alt="Domain Age" loading="lazy" style="height: 24px;" />`;
+
+    // 5. 服务器图标 (ESA) - 这个通常不需要变，除非你的图标路径也变了
+    const serverDiv = document.createElement('div');
+    serverDiv.className = "badge-item server-badge";
+    serverDiv.title = "Server Infrastructure";
+    serverDiv.innerHTML = `<img src="/favicon/esa.svg" alt="Server Icon" class="server-icon" loading="lazy" />`;
+
+    // 6. ICP 备案徽章
+    // 注意：ICP 备案号是固定的，不能自动检测，需要你手动填写
+    const icpLink = document.createElement('a');
+    icpLink.href = "https://beian.miit.gov.cn/";
+    icpLink.target = "_blank";
+    icpLink.rel = "nofollow noopener";
+    icpLink.className = "badge-item icp-badge";
+    icpLink.title = "ICP 备案查询";
+    icpLink.innerHTML = `
+      <img src="/favicon/icp.svg" alt="ICP Icon" class="icp-icon" loading="lazy" />
+      <span class="icp-text">陕ICP备2023002152号</span>
+    `;
+
+    // 将所有徽章添加到容器中
+    container.appendChild(ipv6Link);
+    container.appendChild(sslLink);
+    container.appendChild(http3Link);
+    container.appendChild(ageLink);
+    container.appendChild(serverDiv);
+    container.appendChild(icpLink);
+  });
+</script>
