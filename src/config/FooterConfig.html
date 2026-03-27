@@ -19,22 +19,22 @@
               <img src="https://static.ipw.cn/icon/ssl-s1.svg" alt="SSL Secure" loading="lazy" />
             </a>
 
-            <!-- 3. HTTP/3 -->
-            <a id="badge-http3" href="#" target="_blank" rel="noopener noreferrer" class="badge-item" title="检查 HTTP/3 支持">
-              <img id="img-http3" src="" alt="HTTP/3 Supported" loading="lazy" style="height: 24px;" />
-            </a>
-
-            <!-- 4. 域名年龄 -->
-            <a id="badge-age" href="#" target="_blank" rel="noopener noreferrer" class="badge-item" title="域名年龄查询">
-              <img id="img-age" src="" alt="Domain Age" loading="lazy" style="height: 24px;" />
-            </a>
-            
-            <!-- 5. 服务器图标 (固定路径，不需要变) -->
+            <!-- 3. 服务器图标 -->
             <div class="badge-item server-badge" title="Server Infrastructure">
               <img src="/favicon/esa.svg" alt="Server Icon" class="server-icon" loading="lazy" />
             </div>
 
-            <!-- 6. ICP 备案 (固定链接) -->
+            <!-- 4. HTTP/3 -->
+            <a id="badge-http3" href="#" target="_blank" rel="noopener noreferrer" class="badge-item" title="检查 HTTP/3 支持">
+              <img id="img-http3" src="" alt="HTTP/3 Supported" loading="lazy" style="height: 24px;" />
+            </a>
+
+            <!-- 5. 域名年龄 -->
+            <a id="badge-age" href="#" target="_blank" rel="noopener noreferrer" class="badge-item" title="域名年龄查询">
+              <img id="img-age" src="" alt="Domain Age" loading="lazy" style="height: 24px;" />
+            </a>
+
+            <!-- 6. ICP 备案 -->
             <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener" class="badge-item icp-badge" title="ICP 备案查询">
               <img src="/favicon/icp.svg" alt="ICP Icon" class="icp-icon" loading="lazy" />
               <span class="icp-text">陕ICP备2023002152号</span>
@@ -44,19 +44,7 @@
         </div>
 
       </div>
-
-      <!-- 底部文字 -->
-      <div class="m-0.5">
-        © <span id="copyright-year">2026</span> 枫诀宝贝. All Rights Reserved. /
-        <a class="transition link text-(--primary) font-medium" target="_blank" href="/rss.xml">RSS</a> /
-        <a class="transition link text-(--primary) font-medium" target="_blank" href="/sitemap-index.xml">Sitemap</a>
-      </div>
-
-      <div class="m-0.5">
-        Powered by
-        <a class="transition link text-(--primary) font-medium" target="_blank" href="https://astro.build">Astro</a> &
-        <a class="transition link text-(--primary) font-medium" target="_blank" href="https://github.com/CuteLeaf/Firefly">Firefly</a>
-      </div>
+      <!-- 注意：此处已删除版权文字和 Powered by 链接 -->
     </div>
   </div>
 </div>
@@ -79,7 +67,7 @@
 <!-- 核心脚本：自动检测域名并填充链接 -->
 <script>
   (function() {
-    // 1. 自动获取当前域名 (例如: v7w.cn)
+    // 1. 自动获取当前域名
     const currentDomain = window.location.hostname;
     
     // 2. 更新各个徽章的链接
@@ -93,7 +81,7 @@
     if(http3Link) http3Link.href = `https://http3.wcode.net/?q=${currentDomain}`;
     if(ageLink) ageLink.href = `https://14.cx/${currentDomain}`;
 
-    // 3. 更新图片地址 (HTTP/3 和 域名年龄的图片地址也包含域名参数)
+    // 3. 更新图片地址
     const imgHttp3 = document.getElementById('img-http3');
     const imgAge = document.getElementById('img-age');
 
