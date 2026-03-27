@@ -117,6 +117,8 @@ if (isLocalSrcLogo) {
                                         <img src={url(siteConfig.navbar.logo.value)} alt={siteConfig.navbar.logo.alt || siteConfig.title} class="h-7 w-7 mb-1 mr-2 object-contain" fetchpriority="high" />
                                     ) : siteConfig.navbar.logo?.type === "url" ? (
                                         <img src={siteConfig.navbar.logo.value} alt={siteConfig.navbar.logo.alt || siteConfig.title} class="h-7 w-7 mb-1 mr-2 object-contain" fetchpriority="high" />
+                                    ) : siteConfig.navbar.logo?.type === "svg" ? (
+                                        <span class="text-[1.75rem] mb-1 mr-2" set:html={siteConfig.navbar.logo.value} />
                                     ) : null}
                     {navbarTitle}
                 </div>

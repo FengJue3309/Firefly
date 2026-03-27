@@ -61,10 +61,10 @@ export type SiteConfig = {
 	}>;
 
 	navbar: {
-		/** 导航栏Logo图标，可选类型：icon库、本地图片、网络图片链接 */
+		/** 导航栏Logo图标，可选类型：icon库、本地图片、网络图片链接、SVG代码 */
 		logo?: {
-			type: "icon" | "image" | "url";
-			value: string; // icon名、本地图片路径或网络图片url
+			type: "icon" | "image" | "url" | "svg";
+			value: string; // icon名、本地图片路径、网络图片url或SVG代码
 			alt?: string; // 图片alt文本
 		};
 		title?: string; // 导航栏标题，如果不设置则使用 title
