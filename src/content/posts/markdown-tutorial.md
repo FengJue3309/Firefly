@@ -5,7 +5,7 @@ published: 2026-03-30
 tags: [Markdown, 效率提升, 文档排版, 博客搭建]
 category: Markdown
 lang: zh-CN
-image: /images/typora-icon.png
+image: https://v7w.cn/images/typora-icon.png
 ---
 
 Markdown是一种轻量级标记语言，由John Gruber于2004年创建，现已成为技术文档、博客文章和代码注释的首选写作工具。它结合了易读易写的纯文本格式和强大的排版功能，使创作者能够专注于内容本身而非格式细节，如本文就是用Markdown渲染的。**写Markdown既简单又需要技巧，关键在于理解基本语法**。本文将通过"代码+效果"的展示方式，全面讲解Markdown的核心语法，让你能够轻松编写出格式美观、内容丰富的Markdown文档。
@@ -259,22 +259,22 @@ greet("Alice")
 图片语法与超链接类似，但**在方括号前添加感叹号**。
 
 ```markdown
-![图片替代文本](/images/typora-icon.png)
+![图片替代文本](https://v7w.cn/images/typora-icon.png)
 或者使用参考式图片：![参考式图片][logo]
-[logo]: /images/typora-icon.png
+[logo]: https://v7w.cn/images/typora-icon.png
 ```
 
 效果：
 
-![图片替代文本](/images/typora-icon.png)
+![图片替代文本](https://v7w.cn/images/typora-icon.png)
 
 或者使用参考式图片：
-![参考式图片](/images/typora-icon.png)
+![参考式图片](https://v7w.cn/images/typora-icon.png)
 
 **注意**：在Markdown教程中展示图片语法时，需要使用反斜杠转义感叹号和方括号：
 
 ```markdown
-\!\[图片替代文本\]\(https://image.tianhw.top/avatar.webp\)
+\!\[图片替代文本\]\(https://v7w.cn/images/typora-icon.png\)
 ```
 
 ## 表格
