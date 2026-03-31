@@ -1,6 +1,6 @@
 ---
 title: JAVA常用结构语句
-description: 本文详细介绍了Java编程中的核心控制流语句。内容涵盖三大循环结构（for、while、do...while）的语法与执行逻辑，深入解析条件判断语句（if...else、switch case）的使用规则与嵌套技巧，并补充了增强for循环及break、continue等跳转控制语句。通过本文，你将全面掌握如何构建逻辑严密、高效复用的Java代码。
+description: "本文详解Java核心控制流语句，涵盖for、while、do…while循环与if…else、switch case条件判断，并介绍增强for循环及跳转语句，助你掌握高效代码构建逻辑。"
 published: 2026-04-01
 tags: [Java, 循环结构, 条件语句, Switch Case, 编程基础]
 category: Java
