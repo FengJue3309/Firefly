@@ -5,7 +5,7 @@ published: 2026-03-31
 tags: [计算机基础, 二进制, 计算机科学, 硬件原理]
 category: 技术科普
 lang: zh-CN
-image: /assets/images/binary-vs-ternary/cover.webp
+image: /images/binary/chrome_Yuciyp8jcM.webp
 ---
 
 在当今数字时代，我们使用的每一台计算机、每一部手机，乃至一块手表，几乎都在以 **"0" 与 "1"** 的形式进行运算与交流。
@@ -14,7 +14,7 @@ image: /assets/images/binary-vs-ternary/cover.webp
 
 于是，问题来了：**为什么如今的计算机世界几乎清一色地采用二进制，而不是三进制呢？**
 
-接下来，我们将从**历史起源、逻辑原理、硬件特性、工程现实**与**未来趋势**等五大维度，深入剖析这个问题。
+接下来，我们将从**历史起源、逻辑原理、硬件特性，工程现实**与**未来趋势**等五大维度，深入剖析这个问题。
 
 ## 一，二进制的起源与发展历程
 
@@ -22,7 +22,7 @@ image: /assets/images/binary-vs-ternary/cover.webp
 
 17 世纪，德国数学家兼哲学家**莱布尼茨（Gottfried Leibniz）**首次提出用**二进制**表示一切事物的思想。他认为世界万物都可以用 "存在（1）" 和 "虚无（0）" 表示，这种符号体系能描述宇宙运行的本质。
 
-![莱布尼茨](/assets/images/binary-vs-ternary/leibniz.webp)
+![莱布尼茨](/images/binary/chrome_BdwQJLoXEO.webp)
 
 莱布尼茨的想法在当时被认为更像是哲学幻想，但它却为后来的逻辑学和计算理论提供了数学语言的基础。
 
@@ -32,7 +32,7 @@ image: /assets/images/binary-vs-ternary/cover.webp
 
 在 20 世纪，随着电子管和晶体管的发明，人们发现这种 "二元逻辑" 与电子电路的 "开 / 关" 状态天然契合。
 
-![布尔代数](/assets/images/binary-vs-ternary/boolean-algebra.webp)
+![布尔代数](/images/binary/chrome_NlJoF5IlhG.webp)
 
 这一发现直接推动了早期计算机的诞生。
 
@@ -72,7 +72,7 @@ image: /assets/images/binary-vs-ternary/cover.webp
 
 Setun 的核心思想是使用**三值逻辑（−1、0、+1）**，能在更少的位数内处理更多信息。
 
-![Setun三进制计算机](/assets/images/binary-vs-ternary/setun.webp)
+![Setun三进制计算机](/images/binary/chrome_8jgptsihsY.webp)
 
 在实验中，Setun 在某些算术运算上比同年代的二进制机更高效。然而，它很快被放弃，原因有三：
 
@@ -112,7 +112,7 @@ Setun 的核心思想是使用**三值逻辑（−1、0、+1）**，能在更少
 
 这几乎是不可能的。
 
-![二进制生态](/assets/images/binary-vs-ternary/ecosystem.webp)
+![二进制生态](/images/binary/chrome_Yuciyp8jcM.webp)
 
 ## 五、未来的多进制计算机：从理论走向现实的可能性
 
@@ -122,7 +122,7 @@ Setun 的核心思想是使用**三值逻辑（−1、0、+1）**，能在更少
 
 与电信号不同，光子可以同时具有多个可区分状态，这使得**多进制逻辑**成为可能。
 
-![光子计算](/assets/images/binary-vs-ternary/photonic.webp)
+![光子计算](/images/binary/chrome_DbcmKdocxV.webp)
 
 如果未来光子计算技术成熟，我们或许将迎来 "天然三进制" 甚至 "十进制" 的信息处理模式。
 
@@ -142,7 +142,7 @@ Setun 的核心思想是使用**三值逻辑（−1、0、+1）**，能在更少
 
 未来的 AI 计算芯片可能会采用 "类三进制" 的思维模式。
 
-![类脑芯片](/assets/images/binary-vs-ternary/brain-chip.webp)
+![类脑芯片](/images/binary/chrome_EFGdA8cqb2.webp)
 
 ## 六、哲学层面的思考：二进制是否限制了人类思维？
 
