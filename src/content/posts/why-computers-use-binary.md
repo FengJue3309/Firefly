@@ -5,7 +5,7 @@ published: 2026-03-31
 tags: [计算机基础, 二进制, 计算机科学, 硬件原理]
 category: 技术科普
 lang: zh-CN
-image: /images/binary/chrome_Yuciyp8jcM.webp
+image: /images/binary/chrome_NlJoF5IlhG.webp
 ---
 
 在当今数字时代，我们使用的每一台计算机、每一部手机，乃至一块手表，几乎都在以 **"0" 与 "1"** 的形式进行运算与交流。
