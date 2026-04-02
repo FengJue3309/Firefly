@@ -38,30 +38,23 @@ if (footerConfig.enable) {
     <div class="mb-2">
       {customFooterHtml && <div set:html={customFooterHtml} />}
     </div>
-    <div class="m-0.5 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5">
-      &copy; <span id="copyright-year">{currentYear}</span>
-      {profileConfig.name}. All Rights Reserved.
-      <span class="text-[var(--line-divider)]">·</span>
-      <a class="transition link text-(--primary) font-medium" href={url("/privacy-policy/")}>隐私政策</a>
-      <span class="text-[var(--line-divider)]">·</span>
-      <a class="transition link text-(--primary) font-medium" href={url("/terms-of-service/")}>服务条款</a>
-      <span class="text-[var(--line-divider)]">·</span>
-      <a class="transition link text-(--primary) font-medium" target="_blank" href={url("rss.xml")}>RSS</a>
-      <span class="text-[var(--line-divider)]">·</span>
-      <a class="transition link text-(--primary) font-medium" target="_blank" href={url("sitemap-index.xml")}>Sitemap</a>
+    <!-- 版权信息 -->
+    <div class="text-xs opacity-60 mb-1.5">
+      &copy; <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved.
     </div>
-    <div class="m-0.5">
-      Powered by
-      <a
-        class="transition link text-(--primary) font-medium"
-        target="_blank"
-        href="https://astro.build">Astro</a
-      > &
-      <a
-        class="transition link text-(--primary) font-medium"
-        target="_blank"
-        href="https://github.com/CuteLeaf/Firefly">Firefly</a
-      >
+    <!-- 链接栏 -->
+    <div class="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-xs">
+      <a class="transition hover:text-[var(--primary)] hover:underline" href={url("/privacy-policy/")}>隐私政策</a>
+      <span class="opacity-30">|</span>
+      <a class="transition hover:text-[var(--primary)] hover:underline" href={url("/terms-of-service/")}>服务条款</a>
+      <span class="opacity-30">|</span>
+      <a class="transition hover:text-[var(--primary)] hover:underline" target="_blank" href={url("rss.xml")}>RSS</a>
+      <span class="opacity-30">|</span>
+      <a class="transition hover:text-[var(--primary)] hover:underline" target="_blank" href={url("sitemap-index.xml")}>Sitemap</a>
+    </div>
+    <!-- 技术驱动 -->
+    <div class="text-xs opacity-40 mt-1.5">
+      Powered by <a class="transition hover:opacity-80" target="_blank" href="https://astro.build">Astro</a> &amp; <a class="transition hover:opacity-80" target="_blank" href="https://github.com/CuteLeaf/Firefly">Firefly</a>
     </div>
     <!-- 
       注意：请勿随意修改或删除 "Powered by Astro & Firefly" 部分，这是对开源项目的尊重和支持。
