@@ -88,7 +88,7 @@ lang: zh-CN
 如有任何疑问，请通过以下方式联系我们：
 
 - **网站**：[v7w.cn](https://v7w.cn)
-- **邮箱**：admin@v7w.cn
+- **邮箱**：mail@v7w.cn
 
 ---
 
