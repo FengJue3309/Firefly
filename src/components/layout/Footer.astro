@@ -38,19 +38,17 @@ if (footerConfig.enable) {
     <div class="mb-2">
       {customFooterHtml && <div set:html={customFooterHtml} />}
     </div>
-    <div class="m-0.5">
+    <div class="m-0.5 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5">
       &copy; <span id="copyright-year">{currentYear}</span>
-      {profileConfig.name}. All Rights Reserved. /
-      <a
-        class="transition link text-(--primary) font-medium"
-        target="_blank"
-        href={url("rss.xml")}>RSS</a
-      > /
-      <a
-        class="transition link text-(--primary) font-medium"
-        target="_blank"
-        href={url("sitemap-index.xml")}>Sitemap</a
-      >
+      {profileConfig.name}. All Rights Reserved.
+      <span class="text-[var(--line-divider)]">·</span>
+      <a class="transition link text-(--primary) font-medium" href={url("/posts/privacy-policy/")}>隐私政策</a>
+      <span class="text-[var(--line-divider)]">·</span>
+      <a class="transition link text-(--primary) font-medium" href={url("/posts/terms-of-service/")}>服务条款</a>
+      <span class="text-[var(--line-divider)]">·</span>
+      <a class="transition link text-(--primary) font-medium" target="_blank" href={url("rss.xml")}>RSS</a>
+      <span class="text-[var(--line-divider)]">·</span>
+      <a class="transition link text-(--primary) font-medium" target="_blank" href={url("sitemap-index.xml")}>Sitemap</a>
     </div>
     <div class="m-0.5">
       Powered by
