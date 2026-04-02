@@ -5,7 +5,7 @@ published: 2026-04-03
 tags: [Linux, Elasticsearch]
 category: Linux
 lang: zh-CN
-image: cover.png
+image: /images/elasticsearch/cover.png
 ---
 
 Elasticsearch是基于Lucene的分布式搜索引擎。
